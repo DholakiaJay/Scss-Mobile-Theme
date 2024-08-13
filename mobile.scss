@@ -1,0 +1,293 @@
+@mixin flex($jc: center, $ai: center) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin colors($color: white) {
+    color: $color;
+}
+
+.container {
+    @include flex();
+    gap: 21px;
+    height: 90vh;
+    width: 90vw;
+    background-color: none;
+    
+    .lock {
+        @include flex();
+        gap: 36px;
+        padding: 20px;
+        font-size: 1.8rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.container .mobile {
+    height: 75.6%;
+    width: 19.8%;
+    color: white;
+    border-radius: 12px;
+    padding: 9px 6px;
+    @include flex(center, center);
+    flex-direction: column;
+    gap: 3px;
+    background-color: #28282b;
+    overflow: hidden;
+    position: relative;
+    background-image: url("https://i0.wp.com/www.3wallpapers.fr/wp-content/uploads/2018/10/iPhone-wallpaper-dark-plant.png?ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    .camera {
+        position: absolute;
+        top: 1.8%;
+        left: 1.8%;
+        font-size: 0.6rem;
+        color: rgba(255, 255, 255, 0.425);
+        background-color: rgba(192, 192, 192, 0.256);
+        @include flex();
+        gap: 6px;
+        border: 3px solid black;
+        border-radius: 12px;
+        padding: 6px 9px;
+        width: fit-content;
+    }
+    .screen {
+        display: none;
+
+        .menu {
+            height: 80%;
+            width: 90%;
+
+            border-radius: 3px;
+            font-size: 1.5rem;
+            @include flex();
+            gap: 54px;
+            flex-wrap: wrap;
+            padding: 3px 3px;
+            color: white;
+
+            .items {
+                @include flex();
+                padding: 3px 3px;
+                &:hover
+                {
+                    transition: all 300ms;
+                    transform: scale(1.2);
+                    background-color: #28282b3d;
+                }
+            }
+        }
+        .menu img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        #mhomescreen {
+            background-color: transparent;
+        }
+        #two {
+            position: absolute;
+            background-color: #28282b06;
+            right: -96%;
+            
+            backdrop-filter: blur(1px);
+        }
+        #three {
+            position: absolute;
+            background-color: #28282b06;
+            right: -96%;
+            backdrop-filter: blur(1px);
+        }
+        #one {
+            position: absolute;
+            background-color: #28282b06;
+            right: -96%;
+            backdrop-filter: blur(1px);
+        }
+        .slider {
+            @include flex();
+            position: absolute;
+            bottom: 0%;
+            color: grey;
+            gap: 9px;
+        }
+
+        #one span:nth-child(1) {
+            @include colors(lightgreen);
+        }
+        #one span:nth-child(2) {
+            @include colors(aqua);
+        }
+        #one span:nth-child(3) {
+            @include colors(silver);
+        }
+        #one span:nth-child(4) {
+            @include colors(skyblue);
+        }
+        #one span:nth-child(5) {
+            @include colors(rgba(5, 58, 126, 0.722));
+            background-color: white;
+        }
+
+        #one span:nth-child(6) {
+            @include colors(rgb(189, 16, 233));
+            background-color: white;
+        }
+        #one span:nth-child(7) {
+            @include colors(rgb(244, 193, 28));
+        }
+        #one span:nth-child(8) {
+            @include colors(orange);
+        }
+        #one span:nth-child(9) {
+            @include colors(hotpink);
+        }
+        #one span:nth-child(10) {
+            @include colors(rgb(243, 227, 227));
+        }
+        #two span:nth-child(1) {
+            @include colors(rgb(49, 80, 235));
+            background-color: whitesmoke;
+        }
+        #two span:nth-child(2) {
+            @include colors(rgb(49, 80, 235));
+        }
+        #two span:nth-child(3) {
+            @include colors(white);
+            background-color: rgb(11, 174, 11);
+        }
+        #two span:nth-child(4) {
+            @include colors(white);
+            background-image: linear-gradient(rgba(226, 62, 62, 0.67), rgb(218, 223, 125));
+        }
+        #two span:nth-child(5) {
+            @include colors(red);
+        }
+        #two span:nth-child(6) {
+            @include colors(rgb(9, 92, 236));
+        }
+
+        #two span:nth-child(7) {
+            @include colors(yellow);
+            background-image: linear-gradient(blue, blue);
+        }
+        #two span:nth-child(8) {
+            @include colors(skyblue);
+            background-image: linear-gradient(white);
+        }
+        #two span:nth-child(9) {
+            @include colors(rgb(5, 143, 5));
+        }
+        #two span:nth-child(10) {
+            @include colors(red);
+            background-color: whitesmoke;
+        }
+        #three span:nth-child(1) {
+            @include colors(blueviolet);
+            background-color: white;
+        }
+        #three span:nth-child(2) {
+            @include colors(rgb(246, 140, 10));
+            background-color: white;
+        }
+        #three span:nth-child(3) {
+            @include colors(brown);
+            background-color: white;
+        }
+
+        #three span:nth-child(4) {
+            @include colors(blueviolet);
+            background-color: transparent;
+        }
+
+        #three span:nth-child(5) {
+            @include colors(rgba(0, 179, 255, 0.822));
+        }
+        #three span:nth-child(6) {
+            @include colors(rgb(216, 216, 28));
+        }
+        #three span:nth-child(7) {
+            @include colors(Skyblue);
+        }
+
+        #three span:nth-child(8) {
+            @include colors(orange);
+        }
+        #three span:nth-child(9) {
+            @include colors(rgb(100, 233, 100));
+        }
+        #three span:nth-child(10) {
+            @include colors(hotpink);
+        }
+    }
+
+    .btn {
+        height: 10%;
+        width: 100%;
+        position: absolute;
+        bottom: 0%;
+
+        @include flex(space-evenly, center);
+
+        .menubtn {
+            @include flex();
+            padding: 9px 6px;
+            font-size: 1.2rem;
+            // color: white;
+            border-radius: 12px;
+            width: fit-content;
+            &:hover
+            {
+                transition: all 300ms;
+                background-color: whitesmoke;
+                color: #28282b;
+                border-radius: 10px;
+
+            }
+        }
+    }
+}
+input {
+    display: none;
+}
+
+// controls
+
+#display-mobile-none:checked ~ .mobile {
+    transition: all 1200ms;
+    background-color: black;
+    background-image: none;
+    color: black;
+    
+}
+
+#display-menu:checked + .screen {
+    transition: all 900ms;
+    position: relative;
+    top: -5%;
+    height: 90%;
+    width: 100%;
+    @include flex(center, center);
+    flex-direction: column;
+}
+
+#menuone:checked + #one {
+    transition: all 300ms;
+    transform: translateX(-252px);
+}
+#menutwo:checked + #two {
+    transition: all 300ms;
+    transform: translateX(-252px);
+}
+#menuthree:checked + #three {
+    transition: all 300ms;
+    transform: translateX(-252px);
+}

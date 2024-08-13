@@ -1,0 +1,291 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  height: 90vh;
+  width: 90vw;
+  background-color: none;
+}
+.container .lock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding: 20px;
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container .mobile {
+  height: 75.6%;
+  width: 19.8%;
+  color: white;
+  border-radius: 12px;
+  padding: 9px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  background-color: #28282b;
+  overflow: hidden;
+  position: relative;
+  background-image: url("https://i0.wp.com/www.3wallpapers.fr/wp-content/uploads/2018/10/iPhone-wallpaper-dark-plant.png?ssl=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.container .mobile .camera {
+  position: absolute;
+  top: 1.8%;
+  left: 1.8%;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.425);
+  background-color: rgba(192, 192, 192, 0.256);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border: 3px solid black;
+  border-radius: 12px;
+  padding: 6px 9px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .mobile .screen {
+  display: none;
+}
+.container .mobile .screen .menu {
+  height: 80%;
+  width: 90%;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+  flex-wrap: wrap;
+  padding: 3px 3px;
+  color: white;
+}
+.container .mobile .screen .menu .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 3px;
+}
+.container .mobile .screen .menu .items:hover {
+  transition: all 300ms;
+  transform: scale(1.2);
+  background-color: rgba(40, 40, 43, 0.2392156863);
+}
+.container .mobile .screen .menu img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .mobile .screen #mhomescreen {
+  background-color: transparent;
+}
+.container .mobile .screen #two {
+  position: absolute;
+  background-color: rgba(40, 40, 43, 0.0235294118);
+  right: -96%;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+.container .mobile .screen #three {
+  position: absolute;
+  background-color: rgba(40, 40, 43, 0.0235294118);
+  right: -96%;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+.container .mobile .screen #one {
+  position: absolute;
+  background-color: rgba(40, 40, 43, 0.0235294118);
+  right: -96%;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+.container .mobile .screen .slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0%;
+  color: grey;
+  gap: 9px;
+}
+.container .mobile .screen #one span:nth-child(1) {
+  color: lightgreen;
+}
+.container .mobile .screen #one span:nth-child(2) {
+  color: aqua;
+}
+.container .mobile .screen #one span:nth-child(3) {
+  color: silver;
+}
+.container .mobile .screen #one span:nth-child(4) {
+  color: skyblue;
+}
+.container .mobile .screen #one span:nth-child(5) {
+  color: rgba(5, 58, 126, 0.722);
+  background-color: white;
+}
+.container .mobile .screen #one span:nth-child(6) {
+  color: rgb(189, 16, 233);
+  background-color: white;
+}
+.container .mobile .screen #one span:nth-child(7) {
+  color: rgb(244, 193, 28);
+}
+.container .mobile .screen #one span:nth-child(8) {
+  color: orange;
+}
+.container .mobile .screen #one span:nth-child(9) {
+  color: hotpink;
+}
+.container .mobile .screen #one span:nth-child(10) {
+  color: rgb(243, 227, 227);
+}
+.container .mobile .screen #two span:nth-child(1) {
+  color: rgb(49, 80, 235);
+  background-color: whitesmoke;
+}
+.container .mobile .screen #two span:nth-child(2) {
+  color: rgb(49, 80, 235);
+}
+.container .mobile .screen #two span:nth-child(3) {
+  color: white;
+  background-color: rgb(11, 174, 11);
+}
+.container .mobile .screen #two span:nth-child(4) {
+  color: white;
+  background-image: linear-gradient(rgba(226, 62, 62, 0.67), rgb(218, 223, 125));
+}
+.container .mobile .screen #two span:nth-child(5) {
+  color: red;
+}
+.container .mobile .screen #two span:nth-child(6) {
+  color: rgb(9, 92, 236);
+}
+.container .mobile .screen #two span:nth-child(7) {
+  color: yellow;
+  background-image: linear-gradient(blue, blue);
+}
+.container .mobile .screen #two span:nth-child(8) {
+  color: skyblue;
+  background-image: linear-gradient(white);
+}
+.container .mobile .screen #two span:nth-child(9) {
+  color: rgb(5, 143, 5);
+}
+.container .mobile .screen #two span:nth-child(10) {
+  color: red;
+  background-color: whitesmoke;
+}
+.container .mobile .screen #three span:nth-child(1) {
+  color: blueviolet;
+  background-color: white;
+}
+.container .mobile .screen #three span:nth-child(2) {
+  color: rgb(246, 140, 10);
+  background-color: white;
+}
+.container .mobile .screen #three span:nth-child(3) {
+  color: brown;
+  background-color: white;
+}
+.container .mobile .screen #three span:nth-child(4) {
+  color: blueviolet;
+  background-color: transparent;
+}
+.container .mobile .screen #three span:nth-child(5) {
+  color: rgba(0, 179, 255, 0.822);
+}
+.container .mobile .screen #three span:nth-child(6) {
+  color: rgb(216, 216, 28);
+}
+.container .mobile .screen #three span:nth-child(7) {
+  color: Skyblue;
+}
+.container .mobile .screen #three span:nth-child(8) {
+  color: orange;
+}
+.container .mobile .screen #three span:nth-child(9) {
+  color: rgb(100, 233, 100);
+}
+.container .mobile .screen #three span:nth-child(10) {
+  color: hotpink;
+}
+.container .mobile .btn {
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .mobile .btn .menubtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 6px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .mobile .btn .menubtn:hover {
+  transition: all 300ms;
+  background-color: whitesmoke;
+  color: #28282b;
+  border-radius: 10px;
+}
+
+input {
+  display: none;
+}
+
+#display-mobile-none:checked ~ .mobile {
+  transition: all 1200ms;
+  background-color: black;
+  background-image: none;
+  color: black;
+}
+
+#display-menu:checked + .screen {
+  transition: all 900ms;
+  position: relative;
+  top: -5%;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#menuone:checked + #one {
+  transition: all 300ms;
+  transform: translateX(-252px);
+}
+
+#menutwo:checked + #two {
+  transition: all 300ms;
+  transform: translateX(-252px);
+}
+
+#menuthree:checked + #three {
+  transition: all 300ms;
+  transform: translateX(-252px);
+}/*# sourceMappingURL=mobile.css.map */
